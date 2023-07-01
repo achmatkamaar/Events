@@ -14,10 +14,10 @@ struct AddNewEventView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Create new event")
-                    .font(.system(size: 32))
-                    .fontWeight(.bold)
-                    .padding(.top)
+//                Text("Create new event")
+//                    .font(.system(size: 32))
+//                    .fontWeight(.bold)
+//                    .padding(.top)
                 
                 ZStack(alignment: .bottomLeading) {
                     RoundedRectangle(cornerRadius: 20)
@@ -39,25 +39,38 @@ struct AddNewEventView: View {
                 
                 Form {
                     TextField("Event name", text: $viewModel.title)
+                        .padding(.vertical)
                     
-                    DatePicker("Date", selection: $viewModel.dueDate, displayedComponents: [.date, .hourAndMinute])
+                    DatePicker("Event date", selection: $viewModel.dueDate, displayedComponents: [.date, .hourAndMinute])
                         .datePickerStyle(.graphical)
-                        .labelsHidden()
-                        .padding()
+//                        .labelsHidden()
+                        .padding(.vertical)
                     
-                    ColorPicker("pick a color", selection: $viewModel.color)
+                    ColorPicker("Choose a color", selection: $viewModel.color)
+                        .padding(.vertical)
                     
-                    ButtonView(title: "Save",
-                               background: viewModel.color)
-                    {
-                        //
-                    }
-                    .padding()
+//                    ButtonView(title: "Save",
+//                               background: viewModel.color)
+//                    {
+//                        //
+//                    }
+//                    .padding()
                 }
+                .navigationTitle("Create New Event")
                 .toolbar {
-                    Button("Cancel") {
-                        dismiss()
-                    }
+                    ToolbarItem(placement: .primaryAction) {
+                                Button("Done") {
+                                    // code to add to json (append)
+                                    dismiss()
+                                }
+                                .foregroundColor(viewModel.color)
+                            }
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancel", role: .cancel) {
+                                    dismiss()
+                                }
+                                .foregroundColor(.red)
+                            }
                 }
             }
         }

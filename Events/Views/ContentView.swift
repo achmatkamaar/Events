@@ -81,7 +81,6 @@ struct ContentView: View {
                 //            .background(Color(red: 0.1, green: 0.1, blue: 0.2))
                 .padding(.top)
                 .clipped()
-                .preferredColorScheme(.light)
             }
             .sheet(isPresented: $isPresented) {
                 AddNewEventView()
@@ -90,7 +89,7 @@ struct ContentView: View {
                 Button {
                     isPresented = true
                 } label: {
-                    Image(systemName: "plus")
+                        Image(systemName: "square.and.pencil")
                 }
             }
         }
@@ -112,7 +111,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
     }
 }
 

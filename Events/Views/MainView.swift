@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MainView: View {    
+struct MainView: View {
     var body: some View {
         TabView {
             ContentView()
@@ -15,16 +15,13 @@ struct MainView: View {
                     Label("Home", systemImage: "house")
                         .labelsHidden()
                 }
-            
-//            AddNewEventView()
-//                .tabItem {
-//                    Button {
-//                        isPresented = true
-//                    } label: {
-//                        Label("Add", systemImage: "plus")
-//                    }
-//                }
-            
+
+            CalendarView()
+                .tabItem {
+                    Label("Calender", systemImage: "calendar.circle")
+                        .labelsHidden()
+                }
+
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
@@ -37,11 +34,68 @@ struct MainView: View {
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
-//            .environmentObject(Order())
     }
 }
 
-
-//    .sheet(isPresented: $isPresented) {
-//        AddNewEventView()
+//struct MainView: View {
+//    @State private var selectedTab: Tab = .house
+//
+//    init() {
+//        UITabBar.appearance().isHidden = true
 //    }
+//
+//    var body: some View {
+//        ZStack {
+//            VStack {
+//                TabView(selection: $selectedTab) {
+//                    if selectedTab == .house {
+//                        ContentView()
+//                            .animation(nil, value: selectedTab)
+//                    } else if selectedTab == .leaf {
+//                        AddNewEventView()
+//                    } else if selectedTab == .gearshape {
+//                        SettingsView()
+//                            .animation(nil, value: selectedTab)
+//                    }
+//                }
+//            }
+//            VStack {
+//                Spacer()
+//                CustomTabBarView1(selectedTab: $selectedTab)
+//            }
+//        }
+//    }
+//}
+//
+//struct MainView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainView()
+//    }
+//}
+
+//struct MainView: View {
+//    @State var selectedTab: Tabs = .home
+//
+//    var body: some View {
+//        NavigationView {
+//            VStack {
+//
+//                if selectedTab == .home {
+//                    ContentView()
+//                } else {
+//                    SettingsView()
+//                }
+//
+//                Spacer()
+//
+//                CustomTabBarView1(selectedTab: $selectedTab)
+//            }
+//        }
+//    }
+//}
+//
+//struct MainView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainView()
+//    }
+//}

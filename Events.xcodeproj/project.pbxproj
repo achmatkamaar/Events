@@ -22,8 +22,11 @@
 		7AD76CD72A46FB5500949568 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CD62A46FB5500949568 /* ButtonView.swift */; };
 		7AD76CD92A4700F500949568 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CD82A4700F500949568 /* MainView.swift */; };
 		7AD76CDB2A483F2C00949568 /* SettingsButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CDA2A483F2C00949568 /* SettingsButtonsView.swift */; };
-		7AD76CE32A4844E700949568 /* ColorSchemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CE22A4844E700949568 /* ColorSchemeViewModel.swift */; };
 		7AD76CE72A4848C400949568 /* ColorSchemeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CE62A4848C400949568 /* ColorSchemeViewViewModel.swift */; };
+		7AD76CE92A4C221500949568 /* CustomTabBarView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CE82A4C221500949568 /* CustomTabBarView1.swift */; };
+		7AD76CEB2A4C8FB300949568 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CEA2A4C8FB300949568 /* TabBarButton.swift */; };
+		7AD76CED2A4C95FF00949568 /* SheetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CEC2A4C95FF00949568 /* SheetModel.swift */; };
+		7AD76CEF2A4E21F400949568 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD76CEE2A4E21F400949568 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +46,11 @@
 		7AD76CD62A46FB5500949568 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		7AD76CD82A4700F500949568 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7AD76CDA2A483F2C00949568 /* SettingsButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonsView.swift; sourceTree = "<group>"; };
-		7AD76CE22A4844E700949568 /* ColorSchemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeViewModel.swift; sourceTree = "<group>"; };
 		7AD76CE62A4848C400949568 /* ColorSchemeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeViewViewModel.swift; sourceTree = "<group>"; };
+		7AD76CE82A4C221500949568 /* CustomTabBarView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView1.swift; sourceTree = "<group>"; };
+		7AD76CEA2A4C8FB300949568 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		7AD76CEC2A4C95FF00949568 /* SheetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModel.swift; sourceTree = "<group>"; };
+		7AD76CEE2A4E21F400949568 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +104,16 @@
 			isa = PBXGroup;
 			children = (
 				7A69485D2A40581900FAB98A /* ContentView.swift */,
+				7AD76CE82A4C221500949568 /* CustomTabBarView1.swift */,
+				7AD76CEC2A4C95FF00949568 /* SheetModel.swift */,
+				7AD76CEA2A4C8FB300949568 /* TabBarButton.swift */,
 				7AD76CD82A4700F500949568 /* MainView.swift */,
 				7A6948692A4058C500FAB98A /* CardView.swift */,
 				7A69486F2A4058EB00FAB98A /* AddNewEventView.swift */,
 				7A69486B2A4058CF00FAB98A /* SettingsView.swift */,
 				7AD76CDA2A483F2C00949568 /* SettingsButtonsView.swift */,
 				7A69486D2A4058DB00FAB98A /* AccountView.swift */,
+				7AD76CEE2A4E21F400949568 /* CalendarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,7 +126,6 @@
 				7A6948712A40594C00FAB98A /* EventItem.swift */,
 				7A6948732A40595700FAB98A /* Events.swift */,
 				7A822EC52A4589B20086077F /* DateFormatter.swift */,
-				7AD76CE22A4844E700949568 /* ColorSchemeViewModel.swift */,
 				7AD76CE62A4848C400949568 /* ColorSchemeViewViewModel.swift */,
 			);
 			path = Models;
@@ -192,15 +201,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD76CEB2A4C8FB300949568 /* TabBarButton.swift in Sources */,
 				7A822EC62A4589B20086077F /* DateFormatter.swift in Sources */,
 				7AD76CD72A46FB5500949568 /* ButtonView.swift in Sources */,
 				7AD76CD92A4700F500949568 /* MainView.swift in Sources */,
+				7AD76CE92A4C221500949568 /* CustomTabBarView1.swift in Sources */,
 				7AD76CD52A46F87A00949568 /* NewEventViewViewModel.swift in Sources */,
 				7A69485E2A40581900FAB98A /* ContentView.swift in Sources */,
+				7AD76CED2A4C95FF00949568 /* SheetModel.swift in Sources */,
 				7A69486C2A4058CF00FAB98A /* SettingsView.swift in Sources */,
-				7AD76CE32A4844E700949568 /* ColorSchemeViewModel.swift in Sources */,
 				7A69486A2A4058C500FAB98A /* CardView.swift in Sources */,
 				7AD76CE72A4848C400949568 /* ColorSchemeViewViewModel.swift in Sources */,
+				7AD76CEF2A4E21F400949568 /* CalendarView.swift in Sources */,
 				7A6948702A4058EB00FAB98A /* AddNewEventView.swift in Sources */,
 				7A6948742A40595700FAB98A /* Events.swift in Sources */,
 				7A69485C2A40581900FAB98A /* EventsApp.swift in Sources */,
